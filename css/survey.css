@@ -1,0 +1,50 @@
+/* CUSTOMIZE THE jumbotron
+-------------------------------------------------- */
+.jumbotron .label-primary{
+    font-size: 50%;
+}
+
+/* CUSTOMIZE THE main-content
+-------------------------------------------------- */
+.blog-header{
+    text-align: center;
+}
+.blog-post{
+    font-size: 1.4em;
+}
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+    .featurette-heading-last{
+        margin-top: 20px;
+    }
+}

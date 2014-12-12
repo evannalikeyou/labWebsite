@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>相关荣誉</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/survey.css"/>
+</head>
+<body>
+
+    <!-- SIGN-UP -->
+    <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">登录</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="signupInputEmail1">邮箱</label>
+                            <input min="0" max="20" type="email" class="form-control" id="signupInputEmail1" placeholder="输入邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupInputPassword1">密码</label>
+                            <input min="0" max="20" type="password" class="form-control" id="signupInputPassword1" placeholder="密码">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">登录</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Login -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">注册</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="loginInputEmail1">邮箱</label>
+                            <input type="email" class="form-control" id="loginInputEmail1" placeholder="输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputName">邮箱</label>
+                            <input type="text" class="form-control" id="loginInputName" placeholder="输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputPassword1">密码</label>
+                            <input type="password" class="form-control" id="loginInputPassword1" placeholder="密码">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputPassword2">确认密码</label>
+                            <input type="password" class="form-control" id="loginInputPassword2" placeholder="确认密码">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR================= -->
+    <div class="navbar navbar-primary navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">数字媒体研究所</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <!-- survey -->
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">数媒简介 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="survey-1.html">概况</a></li>
+                            <li><a href="survey-2.html">研究方向</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- news -->
+                    <li ><a href="news.html">信息发布</a></li>
+
+                    <!-- achieve -->
+                    <li class="dropdown">
+                        <a href="achieve.html" class="dropdown-toggle" data-toggle="dropdown">相关荣誉 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">领导关怀</a></li>
+                            <li><a href="#">成果展示</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="download" class="dropdown-toggle" data-toggle="dropdown">相关下载 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">相关制度</a></li>
+                            <li><a href="#">工作制度</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="student.html">学生天地</a></li>
+                    <li><a href="aboutus.html">联系我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="nav-button" data-toggle="modal" data-target="#sign-up">登录</a></li>
+                    <li><a class="nav-button"  data-toggle="modal" data-target="#login">注册</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+  <!-- Docs page layout -->
+    <div class="jumbotron">
+        <h1>数媒简介 <span class="label label-primary">研究方向</span></h1>
+        <p>这里我们会介绍我们的研究方向</p>
+    </div>
+
+    <div class="container main-content">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">裸眼3D研究 <span class="text-muted">进入电视而不是看电视.</span></h2>
+                <p class="lead">围绕裸眼3D立体视频产业化与民用化的广阔前景，开展“裸眼3D片源制作及转换平台”、“裸眼3D视频编、解码、压缩及传输平台”、“裸眼3D显示平台”、“裸眼3D内容服务平台”、“数字媒体平台”等方面的前瞻性研究与技术攻关。</p>
+            </div>
+            <div class="col-md-5">
+                <img src="img/index3.png" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img src="img/index2.png" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">数字文化交互平台研究 <span class="text-muted">让你我更贴近。</span></h2>
+                <p class="lead">通过研发“3D引擎”、“材质编辑器”、“模型编辑器”和“场景编辑器”等基础工具，构建各种数字化科教娱乐系统，并致力于为各大客户蹄造一个公平，安全和多元化的数字化娱乐平台，普及国民科普教育、丰富国民娱乐生活。</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <h2 class="featurette-heading featurette-heading-last">物联网可视化应用平台研究 <span class="text-muted">健康。</span></h2>
+                <p class="lead">构建物联网软件应用平台，重点研究医疗健康物联网综合应用平台，利用物联网创新个性化健康解决方案，形成一种完全以客户为中心的高度便捷化的自我检测和健康过程监控平台。</p>
+            </div>
+            <div class="col-md-7">
+                <img src="img/index1.png" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>数字媒体与应用技术研究所 <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

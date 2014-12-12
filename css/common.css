@@ -1,0 +1,84 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+a:hover{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+dl{
+  margin-bottom: 0;
+}
+
+/*fade basa
+--------------------------------------------*/
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 400px;
+        margin: 100px auto;
+    }
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.navbar{
+  border-radius: 0;
+  margin-bottom: 0;
+  background: #fff;
+}
+.navbar-toggle .icon-bar{
+  background-color: #428bca;
+}
+.navbar .active a{
+  background: #f9f9f9;
+}
+.container-fluid{
+  padding-right: 80px;
+  padding-left: 80px;
+}
+.navbar-right li a:hover{
+  background: inherit;
+  color: #5a5a5a;
+  cursor: pointer;
+}
+
+/* CUSTOMIZE THE jumbotron
+-------------------------------------------------- */
+.jumbotron{
+  padding: 80px;
+  background: url("../img/6.jpg");
+  margin-bottom: 0;
+}
+.jumbotron h1{
+  color: #fff;
+}
+.jumbotron p{
+  color: #efefef;
+}
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+}
+
+.row{
+    margin: 0;
+}
+/* CUSTOMIZE THE jumbotron
+-------------------------------------------------- */
+.footer{
+  padding-top: 40px;
+}
+
+@media (max-width: 850px) {
+    .nav a{
+        font-size: 12px;
+    }
+}

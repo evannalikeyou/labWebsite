@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>数字媒体与应用技术研究所</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+      <!-- SIGN-UP -->
+      <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <h4 class="modal-title" id="signupLabel">登录</h4>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
+                          <div class="form-group">
+                              <label for="signupInputEmail1">邮箱</label>
+                              <input min="0" max="20" type="email" class="form-control" id="signupInputEmail1" placeholder="输入邮箱">
+                          </div>
+                          <div class="form-group">
+                              <label for="signupInputPassword1">密码</label>
+                              <input min="0" max="20" type="password" class="form-control" id="signupInputPassword1" placeholder="密码">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">登录</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+      <!-- Login -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <h4 class="modal-title" id="loginLabel">注册</h4>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
+                          <div class="form-group">
+                              <label for="loginInputEmail1">邮箱</label>
+                              <input type="email" class="form-control" id="loginInputEmail1" placeholder="输入用户名">
+                          </div>
+                          <div class="form-group">
+                              <label for="loginInputName">邮箱</label>
+                              <input type="text" class="form-control" id="loginInputName" placeholder="输入用户名">
+                          </div>
+                          <div class="form-group">
+                              <label for="loginInputPassword1">密码</label>
+                              <input type="password" class="form-control" id="loginInputPassword1" placeholder="密码">
+                          </div>
+                          <div class="form-group">
+                              <label for="loginInputPassword2">确认密码</label>
+                              <input type="password" class="form-control" id="loginInputPassword2" placeholder="确认密码">
+                          </div>
+                          <div class="modal-footer">
+                              <button type="submit" class="btn btn-primary">注册</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+    <!-- NAVBAR================================================== -->
+    <div class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a href="index.html" class="navbar-brand logo">
+                            数字媒体应用与技术研究所
+                        </a>
+                    </div>
+
+                    <div class="navbar-collapse navbar-ex1-collapse in">
+                        <ul class="nav navbar-nav">
+
+                            <!-- survey -->
+                            <li class="dropdown ">
+                                <a href="survey-1.html" class="navbar-link dropdown-toggle">数媒简介</a>
+                                <!--<ul class="dropdown-menu">-->
+                                <!--<li class=""><a href="#">概况</a></li>-->
+                                <!--<li><a href="#">研究方向</a></li>-->
+                                <!--</ul>-->
+                            </li>
+
+                            <!-- news -->
+                            <li class="active dropdown"><a href="news.html" >信息发布</a></li>
+
+                            <!-- achieve -->
+                            <li class="dropdown ">
+                                <a href="#" class="navbar-link dropdown-toggle">相关荣誉</a>
+                                <!--<ul class="dropdown-menu">-->
+                                    <!--<li class=""><a href="/how-do-i">领导关怀</a></li>-->
+                                    <!--<li class=""><a href="/index">成果展示</a></li>-->
+                                <!--</ul>-->
+                            </li>
+
+
+
+                            <!-- system -->
+                            <li class="dropdown">
+                                <a href="system.html" class="dropdown-toggle navbar-link">相关下载</a>
+                                <!--<ul class="dropdown-menu">-->
+                                    <!--<li><a href="#">相关制度</a></li>-->
+                                    <!--<li><a href="#">工作任务</a></li>-->
+                                <!--</ul>-->
+                            </li>
+
+                            <!-- student -->
+                            <li id="navbar-link--student" class="dropdown">
+                                <a class="navbar-link" href="student.html">学生天地</a>
+                            </li>
+
+                            <!-- about us -->
+                            <li id="navbar-link--us" class="dropdown">
+                                <a class="navbar-link" href="about-us">联系我们</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="nav-button" data-toggle="modal" data-target="#sign-up">登录</a></li>
+                            <li><a class="nav-button"  data-toggle="modal" data-target="#login">注册</a></li>
+                        </ul>
+                    </div> <!-- collapse -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="hero" data-speed="10" data-type="background" style="background-position: 50% 0px;">
+
+            <div class="container">
+                <div class="row" id="hero-section">
+                    <div class="col-md-5" id="box-left">
+                        <h1 class="hero-header-text large">数字媒体与应用技术研究所</h1>
+
+                        <p>
+                            <a class="btn btn-primary btn-lg main-get-started scrollnav" href="#">查看详情</a>
+                        </p>
+                    </div>
+                    <div class="col-md-7" id="video-area">
+                        <img src="img/main_head.png" class="swap1 img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.carousel -->
+    <div class="main-row">
+        <div class="container">
+            <div class="row intro">
+                <h1 class="text-center">数媒简介</h1>
+                <p class="text-center">本团队成立于2002年，隶属于重庆邮电大学，是代表重庆参加2012年全国互联网峰会的四大研发团队之一，是重庆快速崛起的软件产品设计团队之一，是行业信息化解决方案和智能化信息系统供应商，拥有热诚的员工和强大的研发能力、能快速响应客户需求，提供各种客户个性化产品、解决方案和服务，全力帮助客户获得商业上的成功，并不断提升人们的生活品质。</p>
+                <!--<p>-->
+                    <!--<a class="btn btn-primary" href="#">查看更多</a>-->
+                <!--</p>-->
+
+            </div>
+        </div>
+    </div>
+
+      <div class="main-row main-search">
+          <div class="container">
+              <div class="row search">
+                  <h1 class="text-center">研究方向</h1>
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <span class="glyphicon glyphicon-eye-open" ></span>
+                          <h3>裸眼3D研究</h3>
+                          <p>围绕裸眼3D立体视频产业化与民用化的广阔前景，开展“裸眼3D片源制作及转换平台”、“裸眼3D视频编、解码、压缩及传输平台”、“裸眼3D显示平台”、“裸眼3D内容服务平台”、“数字媒体平台”等方面的前瞻性研究与技术攻关.</p>
+                          <p><a class="btn btn-default" href="#" role="button">更多详情 &raquo;</a></p>
+                      </div><!-- /.col-lg-4 -->
+                      <div class="col-sm-4">
+                          <span class="glyphicon glyphicon-transfer"></span>
+                          <h3>数字文化交互平台研究</h3>
+                          <p>通过研发“3D引擎”、“材质编辑器”、“模型编辑器”和“场景编辑器”等基础工具，构建各种数字化科教娱乐系统，并致力于为各大客户蹄造一个公平，安全和多元化的数字化娱乐平台，普及国民科普教育、丰富国民娱乐生活。</p>
+                          <p><a class="btn btn-default" href="#" role="button">更多详情 &raquo;</a></p>
+                      </div><!-- /.col-lg-4 -->
+                      <div class="col-sm-4">
+                          <span class="glyphicon glyphicon-cloud"></span>
+                          <h3>物联网可视化应用平台研究</h3>
+                          <p>通过研发“3D引擎”、“材质编辑器”、“模型编辑器”和“场景编辑器”等基础工具，构建各种数字化科教娱乐系统，并致力于为各大客户蹄造一个公平，安全和多元化的数字化娱乐平台，普及国民科普教育、丰富国民娱乐生活。</p>
+                          <p><a class="btn btn-default" href="#" role="button">更多详情 &raquo;</a></p>
+                      </div><!-- /.col-lg-4 -->
+                  </div><!-- /.row -->
+              </div>
+          </div>
+      </div>
+
+      <div class="main-row achieve">
+          <div class="container">
+              <h1 class="text-center">相关荣誉</h1>
+                  <div class="banner has-dots">
+                      <ul>
+                          <li>
+                              <div class="row featurette inner">
+                                  <div class="col-md-6">
+                                      <p class="lead">2012年7月5日至9日，由本研究所推出的3D解决方案的“裸眼3D制作技术” 经过重庆市和国家科技部的重重筛选，从全国上千家参选的高新科技成果中脱颖而出，成功参加了由科技部联合国家发改委、财政部、国土资源部等部委共同主办的 “国家高新技术产业开发区建设20年成就展”。</p>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <img class="featurette-image img-responsive" src="img/main_3d.png" />
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="row featurette inner">
+                                  <div class="col-md-6">
+                                      <p class="lead">团队负责人熊仕勇(左二)正向中共中央政治局委员、国务委员刘延东(右二)和科技部部长万钢(右一)介绍裸眼3D制作技术.</p>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <img class="featurette-image img-responsive" src="img/1.png" />
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="row featurette inner">
+                                  <div class="col-md-6">
+                                      <p class="lead">团队作为参展商重邮参加中国第三届亚欧博览会</p>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <img class="featurette-image img-responsive" src="img/2.png" />
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                      <ol class="dots"></ol>
+                  </div>
+          </div>
+      </div>
+
+      <div class="main-row download">
+          <h1>资料下载</h1>
+          <div class="container">
+
+              <div class="row">
+                  <a class="col-sm-3" href="#">
+                      <img src="img/word.jpg"/>
+                      <p>学习资料</p>
+                  </a>
+                  <a class="col-sm-3" href="#">
+                      <img src="img/pdf.png"/>
+                      <p>学习资料学习资料学习资料学习资料学习资料</p>
+                  </a>
+                  <a class="col-sm-3" href="#">
+                      <img src="img/ppt.png"/>
+                      <p>学习资料学习资料学习资料学习资料学习资料学习资料学习资料</p>
+                  </a>
+                  <a class="col-sm-3" href="#">
+                      <img src="img/word.jpg"/>
+                      <p>学习资料</p>
+                  </a>
+              </div>
+              <div class="row">
+                  <a class="col-sm-3" href="#">
+                      <img src="img/word.jpg"/>
+                      <p>学习资料</p>
+                  </a>
+                  <a class="col-sm-3" href="#">
+                      <img src="img/pdf.png"/>
+                      <p>学习资料学习资料学习资料学习资料学习资料</p>
+                  </a>
+                  <a class="col-sm-3" href="#">
+                      <img src="img/ppt.png"/>
+                      <p>学习资料学习资料学习资料学习资料学习资料学习资料学习资料</p>
+                  </a>
+                  <a class="col-sm-3" href="#">
+                      <img src="img/word.jpg"/>
+                      <p>学习资料</p>
+                  </a>
+              </div>
+              <a href="#" id="lookmore">查看更多</a>
+          </div>
+      </div>
+
+      <div class="main-row parter">
+          <div class="container">
+              <h1 class="text-center">合作伙伴</h1>
+              <div class="row">
+                  <div class="col-sm-3">
+                      <img src="img/baidu-logo.png" alt=""/>
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="img/baidu-logo.png" alt=""/>
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="img/baidu-logo.png" alt=""/>
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="img/baidu-logo.png" alt=""/>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-3">
+                      <img src="img/baidu-logo.png" alt=""/>
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="img/baidu-logo.png" alt=""/>
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="img/baidu-logo.png" alt=""/>
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="img/baidu-logo.png" alt=""/>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="main-row news">
+          <div class="container">
+              <h1 class="text-center">最新动态</h1>
+              <div class="row featurette">
+                  <div class="col-md-8">
+                      <h2>这里是最新新闻</h2>
+                      <p class="lead">围绕裸眼3D立体视频产业化与民用化的广阔前景，开展“裸眼3D片源制作及转换平台”、“裸眼3D视频编、解码、压缩及传输平台”、“裸眼3D显示平台”、“裸眼3D内容服务平台”、“数字媒体平台”等方面的前瞻性研究与技术攻关，构建裸眼3D立体视频在内容制作、传输渠道、显示技术、内容审核、内容关联、内容在线聚合、智能检索、产品包装、在线服务等方面的平台与服务。</p>
+                      <a href="#">查看更多</a>
+                  </div>
+                  <div class="col-md-4">
+                      <h2 class="news_other">其他新闻</h2>
+                      <ul>
+                          <li><a href="#">最新新闻啦啦最新新闻啦啦</a></li>
+                          <li><a href="#">最新新闻啦啦</a></li>
+                          <li><a href="#">最新新闻啦啦</a></li>
+                          <li><a href="#">最新新闻啦啦最新新闻啦啦最新新</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="course_footer_p">
+            <a href="#" class="" target="_blank">网站首页</a>&nbsp;|
+            <a href="#" class="" target="_blank">关于我们</a>&nbsp;|
+            <a href="#" class="" target="_blank">联系我们</a>&nbsp;|
+            <a href="#" class="" target="_blank">帮助中心</a>
+        </p>
+        <p class="course_footer_p">数字媒体与应用技术研究所 版权所有</p>
+        <div class="c"></div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+      <script src="js/unsilder.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+      <script>
+          $('.banner').unslider({
+              speed: 500,               //  The speed to animate each slide (in milliseconds)
+              delay: 3000,              //  The delay between slide animations (in milliseconds)
+              complete: function() {},  //  A function that gets called after every slide animation
+              keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+              dots: true,               //  Display dot navigation
+              fluid: false              //  Support responsive design. May break non-responsive designs
+          });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+    font-family: "microsoft yahei";
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+
+  background-color: #3A4349;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-wrapper a{
+  color: #fff;
+}
+.navbar-wrapper .dropdown:hover > a{
+  color: #000;
+  background-color: #fff;
+}
+.navbar-wrapper .dropdown:hover{
+  background-color: #fff;
+}
+.navbar-wrapper .dropdown:hover .dropdown-menu{
+  display: block;
+  border: none;
+}
+.navbar-right li a:hover{
+    background: inherit;
+    color: #eaeaea;
+    cursor: pointer;
+}
+/* CUSTOMIZE THE Hero
+-------------------------------------------------- */
+
+#hero {
+    background: url('../img/background.png') 50% 0 no-repeat fixed;
+    background-size: 2042px 640px;
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+}
+#hero .container{
+    padding-top: 50px;
+}
+#hero .large{
+    font-size: 60px;
+    line-height: 1.2em;
+    color: #fff;
+}
+#myCarousel .btn-primary {
+    margin-top: 10px;
+    background: #49BA7C;
+    border-color: #2aa08b;
+}
+
+@media (min-width: 480px) {
+    .large {
+        font-size: 48px;
+        line-height: 52px;
+        letter-spacing: normal;
+    }
+}
+
+
+/* container base class */
+.main-row{
+    padding: 30px 0;
+}
+.main-row p{
+    color: #999;
+}
+.intro{
+    margin: 40px 0 0 0;
+}
+.intro p{
+    margin: 10px auto 40px;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+}
+.main-search{
+    text-align: center;
+    padding-bottom: 30px;
+    background: url("../img/skelatal_weave.png");
+}
+.main-search .glyphicon{
+    font-size: 60px;
+    padding: 30px;
+    border-radius: 100%;
+    color: #fff;
+}
+.main-search .glyphicon-eye-open{
+    background: #7dafec;
+}
+.main-search .glyphicon-transfer{
+    background: #88b33e;
+}
+.main-search .glyphicon-cloud{
+    background: #f7af4a;
+}
+
+
+/* = files
+-------------------------------------------------------------- */
+.download{
+    text-align: center;
+    background: #fafafa;
+}
+.download .col-sm-3{
+    margin-top: 30px;
+}
+.download .col-sm-3 p{
+    margin-top: 10px;
+}
+a#lookmore{float: right;color: #2d7ab6;font-size: 1.7em;margin-top: 50px;width: 120px}
+a#lookmore:hover{text-decoration: underline}
+
+
+.parter{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.parter .col-sm-3{
+    margin-top: 20px;
+}
+.parter img{
+    width: 200px;
+}
+
+.news{
+    background: #fafafa;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255,255,255,.6);
+    text-shadow: 0 0 1px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.3);
+}
+.banner ul {
+    list-style: none;
+    padding: 0;
+}
+.banner ul li {
+    display: block;
+    float: left;
+    min-height: 400px;
+}
+.banner .inner{
+    padding: 20px 50px;
+}
+.inner .lead{
+    margin-top: 10%;
+}
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+.banner .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #333333;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+    background: #333333;
+    opacity: 1;
+}
+.news .col-md-8 a{
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.news .col-md-4{
+    padding-left: 5%;
+}
+.news .col-md-4 ul{
+    list-style: none;
+    padding: 0;
+}
+.news .col-md-4 ul li{
+    padding: 4px 0;
+}
+.news .col-md-4 ul li a{
+    font-size: 16px;
+    color: #999;
+}
+/* Footer
+------------------------- */
+.footer{
+    background: #333333;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer .course_footer_p a{
+    color: #e6e6e6;
+}
+.footer .course_footer_p a:hover{
+    color: #428bca;
+    text-decoration: none;
+}
+.course_footer_p{
+    color: #e6e6e6;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  .featurette-heading-last{
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+    #hero {
+        height: 440px;
+    }
+    .intro p{
+        width: 80%;
+    }
+    .main-row h1{
+        margin: 30px;
+    }
+
+}
+@media (min-width: 992px){
+    #hero {
+        height: 436px;
+    }
+    .intro p{
+        width: 80%;
+    }
+    .main-row h1{
+        margin: 30px;
+    }
+}
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 400px;
+        margin: 100px auto;
+    }
+    .intro p{
+        width: 80%;
+    }
+    .main-row h1{
+        margin: 30px;
+    }
+}
+

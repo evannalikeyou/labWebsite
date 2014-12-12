@@ -1,0 +1,91 @@
+
+/* CUSTOMIZE THE main-content
+-------------------------------------------------- */
+#main-content{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+#main-content .row{
+    margin: 10px 0 10px 0;
+}
+#main-content .row h2{
+    border-left: 4px solid #4791D2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#newest{
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 20px;
+}
+.label{
+    font-size: 60%;
+    background: inherit;
+}
+.label-info{
+    color: #5bc0de;
+}
+.label-danger{
+    color: #d9534f;
+}
+#main-content dt a{
+    color: #1a588f;
+}
+#main-content dt i{
+    font-size: 50%;
+}
+#main-content dd a{
+    color: #6f6f6f;
+}
+.featurette-divider{
+    border-top: 1px solid #d9d9d9;
+}
+.new-list hr{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+/* CUSTOMIZE THE new-detail
+-------------------------------------------------- */
+.blog-header{
+  text-align: center;
+}
+.blog-post-meta{
+    text-align: center;
+}
+.blog-post-meta span{
+  margin-right: 10px;
+}
+.blog-main{
+    margin-top: 20px;
+}
+
+/* Footer
+------------------------- */
+.footer{
+    background: #f1f1f1;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer .course_footer_p a{
+    color: #333333;
+}
+.footer .course_footer_p a:hover{
+    color: #428bca;
+    text-decoration: none;
+}
+.course_footer_p{
+    color: #333333;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 768px) {
+  #main-content ul{
+      margin: 10px 0;
+      padding: 0;
+  }
+}

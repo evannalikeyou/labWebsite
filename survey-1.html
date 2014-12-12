@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>相关荣誉</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/survey.css"/>
+</head>
+<body>
+
+    <!-- SIGN-UP -->
+    <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">登录</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="signupInputEmail1">邮箱</label>
+                            <input min="0" max="20" type="email" class="form-control" id="signupInputEmail1" placeholder="输入邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupInputPassword1">密码</label>
+                            <input min="0" max="20" type="password" class="form-control" id="signupInputPassword1" placeholder="密码">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">登录</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Login -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">注册</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="loginInputEmail1">邮箱</label>
+                            <input type="email" class="form-control" id="loginInputEmail1" placeholder="输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputName">邮箱</label>
+                            <input type="text" class="form-control" id="loginInputName" placeholder="输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputPassword1">密码</label>
+                            <input type="password" class="form-control" id="loginInputPassword1" placeholder="密码">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputPassword2">确认密码</label>
+                            <input type="password" class="form-control" id="loginInputPassword2" placeholder="确认密码">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR================= -->
+    <div class="navbar navbar-primary navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">数字媒体研究所</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <!-- survey -->
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">数媒简介 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="survey-1.html">概况</a></li>
+                            <li><a href="survey-2.html">研究方向</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- news -->
+                    <li ><a href="news.html">信息发布</a></li>
+
+                    <!-- achieve -->
+                    <li class="dropdown">
+                        <a href="achieve.html" class="dropdown-toggle" data-toggle="dropdown">相关荣誉 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">领导关怀</a></li>
+                            <li><a href="#">成果展示</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="download" class="dropdown-toggle" data-toggle="dropdown">相关下载 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">相关制度</a></li>
+                            <li><a href="#">工作制度</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="student.html">学生天地</a></li>
+                    <li><a href="aboutus.html">联系我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="nav-button" data-toggle="modal" data-target="#sign-up">登录</a></li>
+                    <li><a class="nav-button"  data-toggle="modal" data-target="#login">注册</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+  <!-- Docs page layout -->
+    <div class="jumbotron">
+        <h1>数媒简介 <span class="label label-primary">概况</span></h1>
+        <p>这里我们会简要介绍我们研究所</p>
+    </div>
+
+    <div class="container main-content">
+        <div class="row">
+            <div class="blog-header col-sm-12">
+                <h1 class="blog-title">概况</h1>
+                <hr class="featurette-divider">
+            </div>
+        </div>
+        <div class="row">
+            <div class="blog-post col-md-10 col-md-offset-1">
+                <p>本团队成立于2002年，隶属于重庆邮电大学，是代表重庆参加2012年全国互联网峰会的四大研发团队之一，是重庆快速崛起的软件产品设计团队之一，是行业信息化解决方案和智能化信息系统供应商，拥有热诚的员工和强大的研发能力、能快速响应客户需求，提供各种客户个性化产品、解决方案和服务，全力帮助客户获得商业上的成功，并不断提升人们的生活品质。</p>
+                <p>目前已为多家企业与事业单位完成了诸如ERP系统以及OA系统、业务支撑系统等信息系统，展现出了稳健的技术基础，特别是近几年来部分国外研究生成员的参与，不仅巩固了现有的技术基础，更是融入了目前软件行业发达国家的高新技术、先进的各行业解决方案及软件设计模式，成为了重庆本土软件业的一个后起之秀。</p>
+                <p>在重庆邮电大学熊仕勇教授的带领下，我团队由最初的4人一直扩展壮大到今天50多人，其中带领团队的领导都是有多年开发经验的软件企业项目经理及各高校的教授专家组成，同时也容纳了部分国内外的优秀研究生团队，2010年底2011年初，自主研发的网页3D游戏引擎、模型编辑器、材质编辑器等软件架构成形， 2011中期至今，网页3D游戏引擎、模型编辑器、材质编辑器、特效编辑器等一整套技术研发完成同时申请了相关专利；同期启动大型网页3D游戏《冰缚》的前期制作；大型网页3D游戏《冰缚》的demo版在2011年11月28日的“第二届中国原创网页游戏峰会”上受到360、YY多玩平台的关注和得到Adobe公司的肯定，并于2011年12月1日由Adobe公司对全球进行展播。目前我团队已将业务和经营范围扩大至7个板块：软件外包、网页3D游戏、裸眼3D、虚拟现实、移动互联网、教育培训、健康物联网。</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>数字媒体与应用技术研究所 <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
